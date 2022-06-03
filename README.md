@@ -2,10 +2,30 @@
 
 ***Note: Research Only (Noncommercial) License***
 
-Master program used for the SmartArm and related systems.
-Current compatible with the 3DSytems device family.
+Master program used for the SmartArm and related systems. Current compatible only with the [3DSystems](https://www.3dsystems.com/haptics) device family.
+
+## Disclaimer
+
+Use at your own risk, there is no support nor warranty of any kind.
+
+## Quick start
+
 1. Install the device drivers of your 3DSystem device [(Vendor Link)](https://support.3dsystems.com/s/article/Haptic-Device-Drivers-for-OpenHaptics)
-2. Configure your device with the `TouchSmartSetup.exe` or similar application.
+2. Configure your device with the `TouchSmartSetup.exe` or similar application. This will name your devices as either `{Left,Right}Device` for two devices, or `Default Device` for one device setups.
 3. Install the `SmartArmMaster` application by downloading the latest installer from the release page in this repository.
-4. Configure the `configuration.json` file as needed.
-5. Run the program.
+4. Configure the `configuration.json` file as needed. (More information below)
+5. Run the program `SmartArmMaster.exe`.
+
+## Configuration
+
+Some information for the commonly used fields in `configuration.json`. Variables not listed here should be considered advanced.
+
+| Variable | Meaning |
+|-----|-----|
+|`left_arm_id` | The label for your left device. Usually `Left Device` in bimanual systems.|
+|`right_arm_id` | The label for your right device. Usually `Right Device` in bimanual systems or `Default Device` when only one interface is used.|
+|`ps_ip_address`| Patient-side (`ps`) IP, that is, the IP of where the follower robots are.|
+|`ps_port`| The port used together with the `ps_id_address`, such as `2222`|
+|`os_ip_address`| Operator-side (`os`) IP, that is, the IP of the computer running this program.|
+|`clutch_virtual_key_code`| The key which will be used to emulate the clutch, as a Windows [Virtual-Key Code](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) |
+|`additional_virtual_key_codes`| A list of additional keys that can be used for arbitrary purposes on the receiving end, as Windows [Virtual-Key Codes](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)|
