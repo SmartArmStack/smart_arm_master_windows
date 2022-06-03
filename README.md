@@ -2,7 +2,7 @@
 
 ***Note: Research Only (Noncommercial) License***
 
-Master program used for the [SmartArm](http://doi.org/10.1002/rcs.2053) and related systems. Current compatible only with the [3DSystems](https://www.3dsystems.com/haptics) device family.
+Master program used for the [SmartArm](http://doi.org/10.1002/rcs.2053) and related systems. Currently compatible only with the [3DSystems](https://www.3dsystems.com/haptics) device family.
 Reads relevant information from the operator-side computer and sends it to the patient-side computer running [ `sas_operator_side_receiver` ](https://github.com/SmartArmStack/smart_arm_stack_researchonly/releases/latest).
 
 ## Disclaimer
