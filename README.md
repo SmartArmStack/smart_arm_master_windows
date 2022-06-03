@@ -2,7 +2,8 @@
 
 ***Note: Research Only (Noncommercial) License***
 
-Master program used for the SmartArm and related systems. Current compatible only with the [3DSystems](https://www.3dsystems.com/haptics) device family.
+Master program used for the [SmartArm](http://doi.org/10.1002/rcs.2053) and related systems. Current compatible only with the [3DSystems](https://www.3dsystems.com/haptics) device family.
+Reads relevant information from the operator-side computer and sends it to the patient-side computer running [ `sas_operator_side_receiver` ](https://github.com/SmartArmStack/smart_arm_stack_researchonly/releases/latest).
 
 ## Disclaimer
 
@@ -24,7 +25,7 @@ Some information for the commonly used fields in `configuration.json`. Variables
 |-----|-----|
 |`left_arm_id` | The label for your left device. Usually `Left Device` in bimanual systems.|
 |`right_arm_id` | The label for your right device. Usually `Right Device` in bimanual systems or `Default Device` when only one interface is used.|
-|`ps_ip_address`| Patient-side (`ps`) IP, that is, the IP of where the follower robots are.|
+|`ps_ip_address`| Patient-side (`ps`) IP, that is, the IP of the computer running the [ `sas_operator_side_receiver` ](https://github.com/SmartArmStack/smart_arm_stack_researchonly/releases/latest).|
 |`ps_port`| The port used together with the `ps_id_address`, such as `2222`|
 |`os_ip_address`| Operator-side (`os`) IP, that is, the IP of the computer running this program.|
 |`clutch_virtual_key_code`| The key which will be used to emulate the clutch, as a Windows [Virtual-Key Code](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) |
