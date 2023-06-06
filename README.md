@@ -1,5 +1,7 @@
 # SmartArmMaster for Windows
 
+![smart_arm_master_gui_snapshot](https://user-images.githubusercontent.com/46012516/209059707-6195c284-e5e7-4d79-a040-48681675d1e4.png)
+
 ***Note: Research Only (Noncommercial) License***
 
 Master program used for the [SmartArm](http://doi.org/10.1002/rcs.2053) and related systems. Currently compatible only with the [3DSystems](https://www.3dsystems.com/haptics) device family.
@@ -15,9 +17,7 @@ Use at your own risk, there is no support nor warranty of any kind.
 2. Configure your device with the `TouchSmartSetup.exe` or similar application. This will name your devices as either `{Left,Right}Device` for two devices, or `Default Device` for one device setups.
 3. Install the `SmartArmMaster` application by downloading the latest installer from the release page in this repository.
 4. Configure the `configuration.json` file as needed. (More information below)
-5. Run the program `SmartArmMaster.exe`. If there are no errors, a GUI similar to the one shown below will appear.
-
-![smart_arm_master_gui_snapshot](https://user-images.githubusercontent.com/46012516/209059707-6195c284-e5e7-4d79-a040-48681675d1e4.png)
+5. Run the program `SmartArmMaster.exe`. If there are no errors, a GUI similar to the one shown at the beginning of the README will appear.
 
 ## Configuration
 
