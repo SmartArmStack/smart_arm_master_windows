@@ -32,3 +32,9 @@ Some information for the commonly used fields in `configuration.json`. Variables
 |`os_ip_address`| Operator-side (`os`) IP, that is, the IP of the computer running this program.|
 |`clutch_virtual_key_code`| The key which will be used to emulate the clutch, as a Windows [Virtual-Key Code](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) |
 |`additional_virtual_key_codes`| A list of additional keys that can be used for arbitrary purposes on the receiving end, as Windows [Virtual-Key Codes](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)|
+
+## Protocol V3
+
+Example sender C++-like (pseudo)code.
+
+https://github.com/SmartArmStack/smart_arm_master_windows/blob/aa2c715573a0e3aed9ae458666828cbf4965b85e/protocol_v3_example.cpp#L1-L75
