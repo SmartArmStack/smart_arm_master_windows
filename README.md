@@ -35,6 +35,10 @@ Some information for the commonly used fields in `configuration.json`. Variables
 
 ## Protocol V3
 
-Example sender C++-like (pseudo)code.
+### Protocol of the information from the haptic interface
 
-https://github.com/SmartArmStack/smart_arm_master_windows/blob/aa2c715573a0e3aed9ae458666828cbf4965b85e/protocol_v3_example.cpp#L1-L75
+https://github.com/SmartArmStack/smart_arm_master_windows/blob/a9eb72c20ebe3b4e7e5ff9b28b9a41106c7f5f09/protocol_v3_example.cpp#L1-L75
+
+### Protocol of the "force" feedback sent to the haptic interface
+
+https://github.com/SmartArmStack/smart_arm_master_windows/blob/a9eb72c20ebe3b4e7e5ff9b28b9a41106c7f5f09/protocol_v3_example.cpp#L76-L102
