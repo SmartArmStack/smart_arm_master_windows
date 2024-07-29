@@ -1,9 +1,7 @@
 /**
-A slightly upgraded version of packet 2 with two additions:
-- Packet version, so that from now on the patient side can also distingish what is being received.
-- Data of any number of additional key states added to the configuration.json.
+This is the information obtained from the haptic interface.
 */
-void UDPSender::send_packet_version_3()
+void send_manipulator_information_packet_version_3()
 {
     QByteArray buffer;
     QDataStream s(&buffer, QIODevice::WriteOnly);
@@ -73,3 +71,33 @@ void UDPSender::send_packet_version_3()
         }
     }
 }
+
+
+/**
+This is the "force" feedback information sent to the haptic interface.
+*/
+void send_manipulator_force_information_packet_version_3()
+{
+        QByteArray buffer_out;
+        QDataStream s(&buffer_out,QIODevice::WriteOnly);
+        s << packet_version;
+        s << computer_index;
+        s << number_of_manipulators;
+
+        for(auto i=0;i<number_of_manipulators;i++)
+        {
+            s << quint16(1);//Manipulator valid
+            s << float(force_x) <<
+                   float(force_y) <<
+                   float(force_z) <<
+                   float(torque_x) <<
+                   float(torque_y) <<
+                   float(torque_z);
+        }
+
+        quint16 crc16_out = qChecksum(buffer_out,buffer_out.size());
+        s << (quint16)crc16_out;   
+
+       //Do something with the s
+}
+
